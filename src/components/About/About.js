@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section id="about" className="section" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -31,7 +31,7 @@ const About = () => {
             className="flex-1"
           >
             <h2 className="h2 text-accent">About me.</h2>
-            <h3 className="h3 mb-4">
+            <h3 className="h3 mb-4 text-[18px] md:text-[24px]">
               I work as a Software Engineer with over 8 months of experience.
               Previously I work as a Netsuite Administrator with over 2 years of
               experience.

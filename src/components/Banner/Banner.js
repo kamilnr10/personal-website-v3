@@ -53,11 +53,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              I'm a developer who currently works as a Software Engineer of ERP
-              system called IFS. I spend most of my free time improving my
-              programming skills, creating websites and apps. Nowadays, my goal
-              is to keep learning and to find an opportunity to start working as
-              a Frontend Developer.
+              I'm an aspiring frontend delevoper who currently works as a
+              Software Engineer of ERP system called IFS. I spend most of my
+              free time improving my programming skills, creating websites and
+              apps. Nowadays, my goal is to keep learning and to find an
+              opportunity to start working as a Frontend Developer.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

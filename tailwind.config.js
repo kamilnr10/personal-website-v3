@@ -26,6 +26,7 @@ module.exports = {
         site: "url('../src/assets/site-bg.jpeg')",
         logo: "url('../src/assets/logo.png)",
         about: "url('../src/assets/about.png)",
+        services: "url('./src/assets/services.png)",
       },
       animation: {
         "waving-hand": "wave 30s linear infinite",
