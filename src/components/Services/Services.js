@@ -44,7 +44,7 @@ const Services = () => {
             className="relative md:flex-row flex-1 items-center justify-center lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">What I do.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
+            <h3 className="h3 mb-16">
               Currently, I work for IFS Industrial and Financial Systems on a
               position of Software Engineer
             </h3>
@@ -68,9 +68,9 @@ const Services = () => {
                 return (
                   <div
                     key={index}
-                    className="flex border-b border-white/20 mb-[38px]"
+                    className="flex border-b border-white/20 mb-[19px] pb-[19px]"
                   >
-                    <div className="max-w-[476px]">
+                    <div className="">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                         {name}
                       </h4>
