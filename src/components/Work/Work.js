@@ -2,6 +2,8 @@ import React from "react";
 import woi from "../../assets/woi_grouped.gif";
 import ir from "../../assets/wo_issue_from_ir.gif";
 import woistatic from "../../assets/woi_static.png";
+import { fadeIn } from "../../variants";
+import { motion } from "framer-motion";
 
 const Work = () => {
   return (
@@ -9,7 +11,13 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-x-10">
           <div className="flex flex-col md:flex-row gap-x-12 mb-12">
-            <div className="">
+            <motion.div
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className=""
+            >
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br />
                 Work.
@@ -19,8 +27,14 @@ const Work = () => {
                 apsoqwe ncz aps asada qwqinais ans a kasn aoas nda
               </p>
               <button className="btn btn-sm">View all projects</button>
-            </div>
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
+            >
               <div className="relative grayscale scale-90 brightness-50 hover:grayscale-0 hover:brightness-100 group-hover:scale-100 transition-all duration-500">
                 <img className="" src={woi} />
                 <img
@@ -34,9 +48,15 @@ const Work = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="flex flex-col gap-y-12">
+          <motion.div
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex flex-col gap-y-12"
+          >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="relative grayscale scale-90 brightness-50 hover:grayscale-0 hover:brightness-100 group-hover:scale-100 transition-all duration-500">
                 <img className="" src={woi} />
@@ -97,7 +117,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
