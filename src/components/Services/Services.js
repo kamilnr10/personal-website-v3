@@ -8,7 +8,7 @@ const utilities = [
   {
     name: "React",
     description:
-      "React can be used as a base in the development of single-page, mobile, or server-rendered applications with frameworks like Next.js. However, React is only concerned with the user interface and rendering components to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.",
+      "React can be used as a base in the development of single-page, mobile, or server-rendered applications with frameworks. However, React is only concerned with the user interface and rendering components to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.",
     link: "Learn more",
   },
   {
@@ -33,14 +33,14 @@ const utilities = [
 
 const Services = () => {
   return (
-    <section id="services" className="section">
+    <section id="services" className="section h-full">
       <div className="container mx-auto">
         <div className="flex flex-col items-center lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="relative md:flex-row flex-1 items-center justify-center lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">What I do.</h2>
@@ -49,7 +49,7 @@ const Services = () => {
               position of Software Engineer
             </h3>
             <img
-              className="hidden md:block absolute top-0 left-0 md:left-[70px] -z-10 opacity-80"
+              className="hidden md:flex absolute top-0 left-0 md:left-[70px] -z-10 opacity-80"
               src={person}
               alt="frontend-developer"
             />
@@ -59,7 +59,7 @@ const Services = () => {
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex flex-1 items-end justify-center"
           >
             <div>

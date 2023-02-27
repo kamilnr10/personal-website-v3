@@ -15,7 +15,7 @@ const Work = () => {
               variants={fadeIn("right", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className=""
             >
               <h2 className="h2 leading-tight text-accent">
@@ -32,7 +32,7 @@ const Work = () => {
               variants={fadeIn("left", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
             >
               <div className="relative grayscale scale-90 brightness-50 hover:grayscale-0 hover:brightness-100 group-hover:scale-100 transition-all duration-500">
@@ -54,7 +54,7 @@ const Work = () => {
             variants={fadeIn("up", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex flex-col gap-y-12"
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">

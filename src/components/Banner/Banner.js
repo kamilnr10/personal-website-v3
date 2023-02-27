@@ -7,10 +7,7 @@ import { fadeIn } from "../../variants";
 
 const Banner = () => {
   return (
-    <div
-      id="banner"
-      className="min-h-[85vh] flex items-center lg:min-h-[78vh] lg:pt-0"
-    >
+    <div id="banner" className="flex items-center lg:pt-0">
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-y-8 lg:flex-row">
           <div className="flex-1 text-center font-secondary lg:text-left lg:px-4">
@@ -18,17 +15,17 @@ const Banner = () => {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-[45px] font-bold leading-[0.8] lg:text-[110px]"
+              viewport={{ once: true, amount: 0.7 }}
+              className="text-[45px] font-bold leading-[0.8] lg:text-[80px]"
             >
-              KAMIL <span>NOWAK</span>
+              <span>KAMIL NOWAK</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[28px] lg:text-[46px] font-secondary font-semibold uppercase leading-1"
+              viewport={{ once: true, amount: 0.7 }}
+              className="mb-6 text-[28px] lg:text-[26px] font-secondary font-semibold uppercase leading-1"
             >
               <span className="">I am a </span>
               <TypeAnimation
@@ -50,7 +47,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
               I'm an aspiring frontend delevoper who currently works as a
@@ -63,7 +60,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="max-w-max gap-x-6 flex items-center mb-12 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">Contact me</button>
@@ -75,7 +72,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.7)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <a href="/me">
