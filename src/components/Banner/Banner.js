@@ -93,7 +93,7 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="animate-waving-hand bg-accent h-[300px] w-[300px] my-[30px] md:my-0 md:w-[570px] md:h-[570px] flex items-center justify-center"
+            className="hidden md:flex animate-waving-hand bg-accent h-[300px] w-[300px] my-[30px] md:my-0 md:w-[570px] md:h-[570px] flex items-center justify-center"
           >
             <img src={avatar} alt="avatar" />
           </motion.div>
