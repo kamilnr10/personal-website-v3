@@ -33,9 +33,9 @@ const Work = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.3 }}
-              className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
+              className=" group relative overflow-hidden border-2 border-white/50 rounded-xl"
             >
-              <div className="relative grayscale scale-90 brightness-50 hover:grayscale-0 hover:brightness-100 group-hover:scale-100 transition-all duration-500">
+              <div className="h-full relative grayscale scale-90 brightness-50 hover:grayscale-0 hover:brightness-100 group-hover:scale-100 transition-all duration-500">
                 <img className="" src={woi} />
                 <img
                   className="absolute top-0 left-0 hover:opacity-0"

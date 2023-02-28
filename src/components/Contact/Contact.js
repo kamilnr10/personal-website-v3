@@ -29,21 +29,30 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 border rounded-2xl flex flex-col gap-y-2 mb-14 pb-20 p-6 items-start"
           >
+            <label htmlFor="name">Name</label>
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-1 mb-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               type="text"
+              id="name"
+              name="name"
               placeholder="Your name"
             />
+            <label htmlFor="email">Email</label>
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-1 mb-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               type="text"
+              id="email"
+              name="email"
               placeholder="Your email"
             />
+            <label htmlFor="message">Message</label>
             <textarea
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
+              className="bg-transparent border-b py-1 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your message"
+              id="message"
+              name="message"
             ></textarea>
             <button className="btn btn-lg">Send message</button>
           </motion.form>
