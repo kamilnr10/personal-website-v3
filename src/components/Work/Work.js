@@ -28,27 +28,6 @@ const Work = () => {
               </p>
               <button className="btn btn-sm">View all projects</button>
             </motion.div>
-            <motion.div
-              variants={fadeIn("left", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.3 }}
-              className=" group relative overflow-hidden border-2 border-white/50 rounded-xl"
-            >
-              <div className="h-full relative grayscale scale-90 brightness-50 hover:grayscale-0 hover:brightness-100 group-hover:scale-100 transition-all duration-500">
-                <img className="" src={woi} />
-                <img
-                  className="absolute top-0 left-0 hover:opacity-0"
-                  src={woistatic}
-                />
-                <div className="absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-500 z-50 text-gradient drop-shadow-lg font-semibold">
-                  <p className="font-bold">SuiteScript</p>
-                  <p className="text-accent font-light">
-                    Work Order Issue from Item Receipt
-                  </p>
-                </div>
-              </div>
-            </motion.div>
           </div>
           <motion.div
             variants={fadeIn("up", 0.5)}

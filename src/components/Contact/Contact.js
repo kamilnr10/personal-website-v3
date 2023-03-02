@@ -48,13 +48,6 @@ const Contact = () => {
           message: "",
         });
       });
-    // let result = response.json();
-    // setFormValues(formInitial);
-    // if (result.code === 200) {
-    //   setStatus({ success: true, message: "Message sent successfully" });
-    // } else {
-    //   setStatus({ success: false, message: "Something went wrong" });
-    // }
   };
 
   return (

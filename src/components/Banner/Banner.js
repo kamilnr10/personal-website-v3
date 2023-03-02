@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import avatar from "../../assets/avatar.png";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import client from "../../sanity";
+import { getPageInfo } from "../../api/getApi";
 
-const Banner = () => {
+const Banner = ({ info }) => {
   return (
     <div
       id="banner"
@@ -21,7 +23,7 @@ const Banner = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-[45px] font-bold leading-[0.8] lg:text-[80px]"
             >
-              <span>KAMIL NOWAK</span>
+              <span>{info.name.toUpperCase()}</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.3)}
@@ -53,11 +55,7 @@ const Banner = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              I'm an aspiring frontend delevoper who currently works as a
-              Software Engineer of ERP system called IFS. I spend most of my
-              free time improving my programming skills, creating websites and
-              apps. Nowadays, my goal is to keep learning and to find an
-              opportunity to start working as a Frontend Developer.
+              {info.backgroundInformation}
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
