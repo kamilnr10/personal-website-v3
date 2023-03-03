@@ -30,9 +30,7 @@ function App() {
   useEffect(() => {
     if (shouldLog.current) {
       console.log("component mounted");
-      setTimeout(() => {
-        fetchInfo();
-      }, 2500);
+      fetchInfo();
       shouldLog.current = false;
     }
   }, []);
