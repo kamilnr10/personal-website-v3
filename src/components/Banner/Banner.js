@@ -7,7 +7,31 @@ import { fadeIn } from "../../variants";
 import client from "../../sanity";
 import { getPageInfo } from "../../api/getApi";
 
-const Banner = ({ info }) => {
+const Banner = () => {
+  const [info, setInfo] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+  const shouldLog = useRef(true);
+
+  const fetchInfo = async () => {
+    try {
+      console.log("started fetching");
+      const response = await client.fetch(getPageInfo);
+      console.log(response);
+      if (response) setInfo(response);
+    } catch (err) {
+      console.log(err);
+    }
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    if (shouldLog.current) {
+      console.log("component mounted");
+      fetchInfo();
+      shouldLog.current = false;
+    }
+  }, []);
+
   return (
     <div
       id="banner"
@@ -23,7 +47,7 @@ const Banner = ({ info }) => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-[45px] font-bold leading-[0.8] lg:text-[80px]"
             >
-              <span>{info?.name.toUpperCase()}</span>
+              <span>{info.name}</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.3)}
