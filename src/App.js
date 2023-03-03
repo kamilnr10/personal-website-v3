@@ -31,9 +31,8 @@ function App() {
     if (shouldLog.current) {
       console.log("component mounted");
       setTimeout(() => {
-        console.log("timeout");
         fetchInfo();
-      }, 2000);
+      }, 2500);
       shouldLog.current = false;
     }
   }, []);

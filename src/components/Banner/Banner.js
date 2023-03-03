@@ -8,6 +8,8 @@ import client from "../../sanity";
 import { getPageInfo } from "../../api/getApi";
 
 const Banner = ({ info }) => {
+  const { name } = info;
+
   return (
     <div
       id="banner"
@@ -23,7 +25,7 @@ const Banner = ({ info }) => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-[45px] font-bold leading-[0.8] lg:text-[80px]"
             >
-              <span>{info.name.toUpperCase()}</span>
+              <span>{name.toUpperCase()}</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.3)}
